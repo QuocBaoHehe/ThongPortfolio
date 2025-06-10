@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: write  # 👈 Quan trọng để cho phép ghi vào repo
+  contents: write  # 👈 Cho phép ghi vào repo
 
 jobs:
   deploy:
@@ -22,7 +22,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL="https://quocbaohehe.github.io/ThongPortfolio/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

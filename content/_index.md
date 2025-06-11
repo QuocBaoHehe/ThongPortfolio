@@ -2,58 +2,102 @@
 title: "Portfolio | Anthony Ho"
 layout: "home"
 ---
-
-<section id="education">
-  ## 🎓 Education
-
-  **California State Polytechnic University, Pomona**  
-  *B.S. Mechanical Engineering, Minor in Physics*  
-  📅 Expected Graduation: May 2026  
-  🎯 GPA: 3.9 / 4.0  
-  🏅 President’s Honor List  
-  🏅 President of Pi Tau Sigma (ME Honor Society)
+<section id="about" class="section-block">
+  <h2>🙋 About Me</h2>
+  <p>
+    I'm a passionate mechanical engineering student at California State Polytechnic University, Pomona, with a strong foundation in design, analysis, and prototyping.
+    My experience spans from hands-on R&D work to robotics competitions and academic research in optical sensing.
+  </p>
+  <p>
+    I enjoy building real-world solutions that blend mechanics and technology, from lifting machines to embedded systems.
+    Whether it's simulating stress in SolidWorks or integrating servo motors with Arduino, I take pride in both precision and creativity.
+  </p>
+  <p>
+    Outside of engineering, I enjoy mentoring others, participating in technical clubs, and constantly exploring new tools and ideas.
+  </p>
 </section>
 
----
+
+<section id="education" class="section-block">
+  <h2>🎓 Education</h2>
+  <p><strong>California State Polytechnic University, Pomona</strong><br>
+  <em>B.S. Mechanical Engineering, Minor in Physics</em></p>
+  <ul>
+    <li>📅 Expected Graduation: May 2026</li>
+    <li>🎯 GPA: 3.9 / 4.0</li>
+    <li>🏅 President’s Honor List</li>
+    <li>🏅 President of Pi Tau Sigma (ME Honor Society)</li>
+  </ul>
+</section>
+
+
 
 <section id="experience">
-  ## 💼 Professional Experience
+  <h2>💼 Professional Experience</h2>
 
-  ### R&D Engineer Intern — Biodynamik, Inc. (Jan 2025 – Present)  
-  Lake Forest, CA  
-  - Led key initiatives contributing to NSF SBIR Phase I award & FDA clearance.
-  - Performed FEA in SolidWorks to optimize orthopedic plate design.
-  - Designed fixtures & prototypes using 3D printing & CNC machining.
-  - Integrated load cells and conducted fracture/compression tests.
-  - Designed custom bone screw & ran torque testing for XT3 device.
+  <article class="job">
+    <h3>R&D Engineer Intern — R&D Department <span class="date">(Jan 2025 – Present)</span></h3>
+    <p class="company">Biodynamik, Inc – Lake Forest, CA</p>
+    <ul>
+      <li>Led core engineering initiatives contributing to NSF SBIR Phase I Award and FDA 510(k) clearance of the XT3 System, an advanced orthopedic device enabling Transverse Tibial Transport (TTT) for the treatment of Diabetic Foot Ulcers (DFUs) and ischemic limb conditions.</li>
+      <li>Performed theoretical stress calculations using Mechanics of Materials and validated results through Finite Element Analysis (FEA) in SolidWorks; simulated 4-Point Bending, Combined Load, and Stress Concentration scenarios to optimize orthopedic plate design.</li>
+      <li>Engineered high-precision test fixtures in SolidWorks and fabricated prototypes using Bambu Lab 3D printing and Bridgeport CNC machining, ensuring tight-tolerance compatibility with laboratory test systems.</li>
+      <li>Integrated Button Load Cells with PhidgetBridge 4-Input systems for real-time force measurement; executed precision color-coded wiring and soldering; conducted Compression Testing on diverse materials to quantify fracture thresholds and validate implant performance.</li>
+      <li>Conducted mechanical analysis to evaluate Lead Screw Efficiency and designed a custom bone screw for the XT3 system using SolidWorks; performed Torque Testing with a digital wrench to determine lifting requirements, ensured clinical reliability; produced manufacturing-ready technical drawings.</li>
+    </ul>
+  </article>
 
-  ### Mechanical Engineer Intern — Bourns, Inc. (May – Aug 2024)  
-  Riverside, CA  
-  - Produced prototypes with SLA 3D printers.
-  - Programmed CNC toolpaths in Fusion 360 + G-Wizard.
-  - Built thermal test fixtures with liquid-cooled heat sinks.
-  - Developed lifecycle test systems (temp, shock, vibration).
+  <article class="job">
+    <h3>Mechanical Engineer Intern — Sensor & Control Division <span class="date">(May – Aug 2024)</span></h3>
+    <p class="company">Bourns, Inc – Riverside, CA</p>
+    <ul>
+      <li>Produced high-fidelity prototypes using Formlabs SLA 3D printers (Form 3, Form Wash, Form Cure L) to support design verification and functional testing.</li>
+      <li>Programmed advanced CAM toolpaths using Fusion 360 and G-Wizard, and machined precision test parts on a Q350 CNC mill, achieving a 60% reduction in prototyping costs and cutting 3 weeks from design iteration timelines.</li>
+      <li>Engineered and fabricated 6 custom thermal test fixtures with integrated liquid-cooled heat sinks, enabling accurate, temperature-controlled performance testing of power resistors.</li>
+      <li>Developed life-cycle test systems to qualify products under high-temperature, thermal shock, and vibration conditions.</li>
+    </ul>
+  </article>
 
-  ### Engineering Tutor — Cal Poly Pomona (Aug 2023 – May 2025)  
-  Disability Resource Center  
-  - Tutored statics, dynamics, thermodynamics, fluids, and MATLAB.
-  - Guided Simulink modeling of dynamic systems (ODEs with drag).
+  <article class="job">
+    <h3>Engineering Tutor <span class="date">(Aug 2023 – May 2025)</span></h3>
+    <p class="company">Disability Resource Center – Cal Poly Pomona</p>
+    <ul>
+      <li>Tutored students in core mechanical engineering subjects, applying theory to real-world problems in statics, dynamics, materials, thermodynamics, and fluids.</li>
+      <li>Guided students in developing a MATLAB point-of-sale application, reinforcing fundamentals in user input handling, control flow, loops, and automated output calculation (totals, payment, and change).</li>
+      <li>Mentored students in Simulink modeling of dynamic vehicle systems, building and simulating block diagrams for both linear and quadratic drag ODEs; enabled analysis of velocity response under varying input forces and conditions.</li>
+    </ul>
+  </article>
 </section>
 
----
+
+
 
 <section id="projects">
-  ## 🔬 Projects & Research
+  <h2>🧪 Projects & Research</h2>
 
-  ### Undergraduate Researcher — Optical Sensing Lab (Aug 2024 – Present)  
-  - Designed thermal expansion experiments using fiber optic sensors.
-  - Published findings in Optica Sensing Congress 2025.
+  <article class="project">
+    <h3>Undergraduate Researcher — Optical Sensing Lab <span class="date">(Aug 2024 – Present)</span></h3>
+    <ul>
+      <li>Pioneered experimental research on thermal expansion in solids by designing and executing high-precision tests to characterize the coefficient of thermal expansion (CTE) of acrylic substrates using SMS (single-mode–multimode–single-mode) fiber optic sensors
+      <li>Quantified wavelength shifts from thermal and mechanical strain, culminating in a publication at the Optica Sensing Congress 2025.
+    </ul>
+  </article>
 
-  ### Dirt Hoarders Robotics Challenge (Mar – May 2024)  
-  - Built 3-DOF robotic excavator arm for debris removal.
-  - Analyzed inertia, selected servos, and programmed Arduino controls.
+  <article class="project">
+    <h3>Dirt Hoarders Robotics Challenge <span class="date">(Mar – May 2024)</span></h3>
+    <ul>
+      <li>Designed a 3-DOF robotic excavator arm with rotary joints to scrape and transfer debris from a 15" x 12" container.</li>
+      <li>Calculated Mass Moment of Inertia and analyzed Material Properties to guarantee stability, durability, and prevent flipping or bending during operation.</li>
+      <li>Selected and integrated servo motors (MG996R, DS3225MG, DS3218MG) based on torque, speed, and weight requirements; developed a wireless Arduino-based control system using UNO R3 and ESP32 joystick shield.</li>
+    </ul>
+  </article>
 
-  ### Hand-Powered Lifting Machine (Feb – Apr 2024)  
-  - Designed a pulley system to lift 500 lb with <13 lb force.
-  - Performed FEA and finalized part drawings with GD&T.
+  <article class="project">
+    <h3>Hand-Powered Lifting Machine <span class="date">(Feb – Apr 2024)</span></h3>
+    <ul>
+      <li>Led a team in designing, constructing, and integrating mechanical systems (ramps, pulleys, wheel/axle) to achieve a mechanical advantage of 38.7 to 54.2, enabling the lifting of a 500 lb block 10 feet with only 9.22-12.91 lb of force.</li>
+      <li>Performed FEA in SOLIDWORKS to identify failure points and selected materials with appropriate Young’s Modulus, Shear Modulus, Yield Strength.</li>
+      <li>Prepared Part & Assembly Engineering Drawings with GD&T and optimal dimensional tolerances.</li>
+    </ul>
+  </article>
 </section>

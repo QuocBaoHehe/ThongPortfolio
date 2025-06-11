@@ -364,3 +364,9 @@ header, main, footer {
   vertical-align: middle;
 }
 }
+
+/*Thêm CSS scroll mượt toàn trang*/
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,2 +1,3 @@
 {{ $js := resources.Get "js/scroll.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}"></script>
+<script src="{{ "js/mobile.js" | relURL }}"></script>

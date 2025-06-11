@@ -1,20 +1,7 @@
+/* ----- SECTION HIỆU ỨNG ----- */
 section {
   padding: 4rem 1rem;
-  scroll-margin-top: 80px; /* tránh bị header che khi scroll */
-}
-/* Style cho các tiêu đề cấp 2 (##) */
-.section-block h2 {
-  color: inherit; /* tự động lấy theo theme */
-  font-size: 2rem;
-  font-weight: 800;
-  border-bottom: 2px solid currentColor;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  opacity: 0.95;
-}
-
-section {
+  scroll-margin-top: 80px;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease-out;
@@ -25,17 +12,19 @@ section.visible {
   transform: translateY(0);
 }
 
-/*Css HTML Nâng Cao */
+/* ----- TIÊU ĐỀ ----- */
+.section-block h2,
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 800;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  text-transform: uppercase;
   border-bottom: 2px solid #444;
   padding-bottom: 0.5rem;
-  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.95;
 }
 
+/* ----- KINH NGHIỆM LÀM VIỆC ----- */
 .job {
   margin-bottom: 2.5rem;
 }
@@ -43,22 +32,20 @@ h2 {
 .job h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0.2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .job .date {
   font-size: 0.95rem;
-  color: inherit;
   opacity: 0.6;
 }
 
 .job .company {
   font-style: italic;
-  color: inherit;
   opacity: 0.8;
   margin-bottom: 0.75rem;
 }
@@ -67,51 +54,313 @@ h2 {
   padding-left: 1.25rem;
   list-style: disc;
 }
-/*Custom Block*/
 
-.section-block {
-  margin-bottom: 3rem;
-}
-
-.section-block h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  border-bottom: 2px solid #444;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-/* Hiệu ứng ẩn hiện header */
+/* ----- HEADER + MENU (ẨN/HIỆN + GỌN GÀNG) ----- */
 header {
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  position: fixed;
+  position: sticky; /* hoặc fixed nếu bạn muốn nổi */
   top: 0;
-  left: 0;
-  width: 100%;
+  max-width: 100% !important;
+  width: 100% !important;
   z-index: 999;
+  background-color: var(--pm-background);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  padding: 1rem 2rem;
+  border-bottom: none;
+  box-shadow: none;
 }
 
+/* Ẩn khi scroll xuống */
 header.hidden {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-20px);
 }
-/*Màu cho header */
-/* Luôn chiếm toàn bộ chiều ngang */
-nav.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw !important;
-  max-width: 100vw !important;
-  margin: 0;
-  padding: 0.5rem 2rem;
-  z-index: 999;
+
+/* Container cho logo + menu */
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
-/* Hiệu ứng ẩn/hiện */
-nav.nav.hidden {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+/* Menu trên desktop */
+.menu-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-left: auto; /* ĐẨY SANG PHẢI */
+  padding: 0;
+}
+
+/* Link style */
+.menu-links li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.menu-links li a:hover {
+  opacity: 1;
+}
+
+
+
+/* Ẩn menu toggle trên desktop */
+#menu-toggle {
+  display: none;
+}
+
+/* Desktop menu mặc định */
+.menu-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Giữ lại duy nhất 1 bản của mỗi nút */
+button.theme-toggle:not(:first-of-type),
+button.menu-toggle:not(:first-of-type) {
+  display: none !important;
+}
+.theme-toggle {
+  display: none !important;
+}
+header .menu-links:not(:first-of-type) {
+  display: none !important;
+}
+
+body > nav.nav {
+  display: none !important;
+}
+
+nav#nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Căn giữa toàn bộ header */
+header.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Căn menu gần icon hơn nếu muốn */
+header .nav {
+  flex: 1;
+}
+/* Ẩn menu ngang trên mobile + toggle menu */
+@media (max-width: 768px) {
+  /* Menu dropdown */
+  #menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b2b2b;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: dropdown 0.3s ease;
+    gap: 0.5rem;
+  }
+
+  /* Mỗi mục */
+  #menu a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+    width: fit-content;
+  }
+
+  #menu a:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+
+  /* Icon chung */
+  #menu a::before {
+    display: inline-block;
+    font-size: 1.25rem;
+  }
+
+  /* Icon riêng cho từng mục */
+  #menu a[href*="about"]::before {
+    content: "🙋";
+  }
+
+  #menu a[href*="education"]::before {
+    content: "🎓";
+  }
+
+  #menu a[href*="experience"]::before {
+    content: "💼";
+  }
+
+  #menu a[href*="projects"]::before {
+    content: "🛠️";
+  }
+
+  /* Toggle menu hiển thị */
+  body.menu-open #menu {
+    display: flex;
+  }
+
+  /* Nút hamburger */
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1000;
+  }
+
+  @keyframes dropdown {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #menu button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+  #menu button:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}
+  body.menu-open #menu-toggle {
+  display: none !important;
+}
+/* Mặc định: sáng */
+#menu {
+  background-color: #f3f3f3;
+  color: #222;
+}
+
+#menu a:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Khi ở chế độ tối */
+body.dark #menu {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+body.dark #menu a:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+/*Màu chữ dark light*/
+body:not(.dark) #menu {
+  color: #222;
+}
+
+body:not(.dark) #menu a {
+  color: #222;
+}
+
+body:not(.dark) #menu-toggle {
+  color: #000 !important;;
+}
+body.dark #menu-toggle {
+  color: #fff;
+}
+
+#menu #theme-toggle {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+/* Force màu chữ theo theme */
+body.dark #menu #theme-toggle {
+  color: #fff !important;
+}
+
+body:not(.dark) #menu #theme-toggle {
+  color: #111 !important;
+}
+
+#menu #theme-toggle {
+  transition: all 0.3s ease;
+}
+
+#menu #theme-toggle:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.dark #menu #theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Hiệu ứng chuyển đổi theme */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Nếu cần: phần header, main, footer cũng nên chuyển */
+header, main, footer {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+}
+
+
+@media (min-width: 769px) {
+  #theme-toggle {
+    all: unset;
+    cursor: pointer;
+    padding-left: 0.5rem;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  #theme-toggle:hover {
+    text-decoration: underline;
+  }
+#theme-toggle svg {
+  vertical-align: middle;
+}
 }

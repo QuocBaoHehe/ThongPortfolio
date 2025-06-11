@@ -18,7 +18,7 @@ document.querySelectorAll('section').forEach((el) => {
 });
 /*2. JS – xử lý scroll và cursor*/
 
-const header = document.querySelector("nav.nav");
+const header = document.querySelector("header");
 let lastScrollY = window.scrollY;
 let mouseNearTop = false;
 

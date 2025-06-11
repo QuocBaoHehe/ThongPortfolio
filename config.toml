@@ -16,7 +16,7 @@ theme = "PaperMod"
   [params.assets]
   extendHead = "partials/extend_head.html"
   extendFooter = "partials/extend_footer.html"
-  customJS = ["js/scroll.js"]
+  customJS = ["js/scroll.js", "js/mobile.js"]
   customCSS = ["css/custom.css"]
 
 [markup]

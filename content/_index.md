@@ -4,7 +4,7 @@ layout: "home"
 ---
 <section id="home" class="section-block">
 <div class="home-profile-card">
-  <img class="profile-avatar" src="/images/ava.jpg" alt="Profile Picture">
+  <img src="images/ava.jpg" alt="Profile Picture" class="profile-avatar">
 
   <h1 class="profile-name">Anthony Ho</h1>
   <p class="profile-title">B.S. Mechanical Engineering</p>
@@ -24,7 +24,7 @@ layout: "home"
   </a>
 </div>
 <div class="action-buttons">
-  <a href="/pdf/Anthony Ho CV.pdf" target="_blank" rel="noopener" class="action-btn">
+  <a href="pdf/Anthony-Ho-CV.pdf" target="_blank" rel="noopener" class="action-btn">
   <i class="fas fa-file-alt"></i> Full CV
 </a>
 

@@ -200,6 +200,10 @@ header .nav {
   }
 
   /* Icon riêng cho từng mục */
+ 
+  #menu a[href*="home"]::before {
+    content: "🏠";
+  }
   #menu a[href*="about"]::before {
     content: "🙋";
   }
@@ -369,4 +373,142 @@ header, main, footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+/*profile*/
+.home-profile-card {
+  background: var(--theme);
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.profile-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  object-fit: cover;
+  display: block !important;
+  margin: 0 auto 1rem auto !important;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.profile-title {
+  color: #d4af37;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.profile-social a {
+  font-size: 1.5rem;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.profile-social a:hover {
+  color: var(--primary);
+}
+/* Áp dụng cho icon trong phần social */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* tăng 2rem */
+  margin-top: 1.5rem;
+  margin-top: 2rem
+}
+
+.social-icons a {
+  all: unset;
+  display: inline-block;
+  font-size: 2rem;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);        /* hiệu ứng zoom nhẹ */
+  color: var(--color-accent);  /* đổi màu khi hover */
+  text-decoration: none !important;  /* đảm bảo không underline */
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.social-icons a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*Button*/
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 600px;
+  margin-inline: auto;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.action-btn {
+  flex: 1; /* Mỗi nút chiếm 50% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: none !important; /* dứt điểm */
+  text-decoration: none !important;
+  box-shadow: none !important;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.action-btn:hover {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.divider-t {
+  position: relative;
+  width: 1px;
+  background: #999;
+}
+
+/* Gạch ngang dưới chân như hình chữ T */
+.divider-t::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 1px;
+  background: #999;
 }

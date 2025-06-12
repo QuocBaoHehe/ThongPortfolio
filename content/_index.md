@@ -2,6 +2,42 @@
 title: "Portfolio | Anthony Ho"
 layout: "home"
 ---
+<section id="home" class="section-block">
+<div class="home-profile-card">
+  <img class="profile-avatar" src="/images/ava.jpg" alt="Profile Picture">
+
+  <h1 class="profile-name">Anthony Ho</h1>
+  <p class="profile-title">B.S. Mechanical Engineering</p>
+
+  <div class="social-icons">
+  <a href="https://www.instagram.com/hodacthong/" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://x.com/yourusername" target="_blank" aria-label="X / Twitter">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+  <a href="https://discord.com/users/yourid" target="_blank" aria-label="Discord">
+    <i class="fab fa-discord"></i>
+  </a>
+  <a href="https://www.facebook.com/HoDacThong" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+</div>
+<div class="action-buttons">
+  <a href="/pdf/Anthony Ho CV.pdf" target="_blank" rel="noopener" class="action-btn">
+  <i class="fas fa-file-alt"></i> Full CV
+</a>
+
+  <div class="divider-t"></div>
+
+  <a href="#contact" class="action-btn">
+    <i class="fa-solid fa-paper-plane"></i>
+    <span>Contact Me</span>
+  </a>
+</div>
+</div>
+</section>
+
 <section id="about" class="section-block">
   <h2>🙋 About Me</h2>
   <p>

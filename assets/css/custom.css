@@ -512,3 +512,185 @@ html {
   height: 1px;
   background: #999;
 }
+/*Contact*/
+
+.contact-section {
+  padding: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.02); /* fallback cho cả light & dark */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.contact-section h2 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: inherit;
+}
+
+.contact-section hr {
+  width: 50px;
+  margin: 0 auto 2rem;
+  border: 2px solid;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-bottom: 2px solid;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background: none;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-section:hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ------------------------------ */
+/* 🌙 DARK MODE */
+html[data-theme="dark"] .contact-section {
+  background: linear-gradient(145deg, rgba(255,255,255,0.015), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    inset 0 0 0.5px rgba(255, 255, 255, 0.1),
+    0 10px 30px rgba(0, 0, 0, 0.8);
+  color: #f0f0f0;
+  backdrop-filter: blur(16px);
+  transition: all 0.3s ease-in-out;
+}
+
+
+html[data-theme="dark"] .contact-section hr {
+  border-color: #aaa;
+}
+
+html[data-theme="dark"] .contact-form button {
+  background: #333;
+  color: white;
+}
+
+html[data-theme="dark"] .contact-form button:hover {
+  background: #555;
+}
+
+html[data-theme='dark'] .contact-form input:not([type='submit']),
+html[data-theme='dark'] .contact-form textarea {
+  color: #ffffff !important;
+  background-color: #2a2a2a !important;
+  border: 1px solid #777 !important;
+  caret-color: #ffffff !important;
+}
+
+html[data-theme="dark"] .contact-form input::placeholder,
+html[data-theme="dark"] .contact-form textarea::placeholder {
+  color: #aaa !important;
+  opacity: 0.7 !important;
+}
+
+/* ------------------------------ */
+/* ☀️ LIGHT MODE */
+html[data-theme="light"] .contact-section {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+html[data-theme="light"] .contact-section hr {
+  border-color: #111;
+}
+
+html[data-theme="light"] .contact-form input,
+html[data-theme="light"] .contact-form textarea {
+  background-color: #f9f9f9;
+  color: #111;
+  border-bottom: 2px solid #333;
+}
+
+html[data-theme="light"] .contact-form input::placeholder,
+html[data-theme="light"] .contact-form textarea::placeholder {
+  color: #888;
+  opacity: 0.8;
+}
+
+html[data-theme="light"] .contact-form input:focus,
+html[data-theme="light"] .contact-form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #007acc;
+}
+
+html[data-theme="light"] .contact-form button {
+  background: #eee;
+  color: #111;
+}
+
+html[data-theme="light"] .contact-form button:hover {
+  background: #ddd;
+}
+/*Send Button*/
+/* ---------------------- */
+/* Base button style */
+/* Base */
+.contact-form button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+/* 🌞 Light mode */
+body:not(.dark) .contact-form button {
+  background-color: #e0e0e0;
+  color: #111;
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.25),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark) .contact-form button:hover {
+  background-color: #ddd;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌙 Dark mode */
+body.dark .contact-form button {
+  background-color: #2c2c2c;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .contact-form button:hover {
+  background-color: #3a3a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+}

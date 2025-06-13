@@ -13,14 +13,8 @@ layout: "home"
   <a href="https://www.instagram.com/hodacthong/" target="_blank" aria-label="Instagram">
     <i class="fab fa-instagram"></i>
   </a>
-  <a href="https://x.com/yourusername" target="_blank" aria-label="X / Twitter">
-    <i class="fab fa-x-twitter"></i>
-  </a>
-  <a href="https://discord.com/users/yourid" target="_blank" aria-label="Discord">
-    <i class="fab fa-discord"></i>
-  </a>
-  <a href="https://www.facebook.com/HoDacThong" target="_blank" aria-label="Facebook">
-    <i class="fab fa-facebook"></i>
+  <a href="https://www.linkedin.com/in/your-linkedin-id/" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
   </a>
 </div>
 <div class="action-buttons">
@@ -136,4 +130,28 @@ layout: "home"
       <li>Prepared Part & Assembly Engineering Drawings with GD&T and optimal dimensional tolerances.</li>
     </ul>
   </article>
+</section>
+
+---
+
+<style>
+body.dark .contact-form input:not([type='submit']),
+body.dark .contact-form textarea {
+  color: #ffffff !important;
+  background-color: #2a2a2a !important;
+  border-color: #777 !important;
+  caret-color: #ffffff !important;
+}
+</style>
+
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <hr>
+  <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Name *" required>
+    <input type="email" name="email" placeholder="Email *" required>
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" placeholder="Message" rows="5"></textarea>
+    <button type="submit">Send</button>
+  </form>
 </section>

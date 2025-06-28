@@ -4,6 +4,7 @@ layout: "home"
 bodyClasses: "page-home"
 ---
 {{< aboutcard >}}
+{{< projects >}}
 
 <section id="experience">
   <h2>💼 Professional Experience</h2>
@@ -41,8 +42,6 @@ bodyClasses: "page-home"
     </ul>
   </article>
 </section>
-
-{{< projects >}}
 
 <section id="education" class="section-block">
   <h2>🎓 Education</h2>

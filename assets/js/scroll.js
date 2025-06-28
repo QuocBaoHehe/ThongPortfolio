@@ -57,3 +57,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  autoHeight: true,
+  slidesPerView: 1, // ✅ Chỉ hiển thị đúng 1 slide
+  centeredSlides: false, // ✅ Bỏ căn giữa để không lộ slide bên cạnh
+  spaceBetween: 0, // ✅ Không có khoảng cách giữa các slide
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

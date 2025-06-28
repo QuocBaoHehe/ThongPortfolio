@@ -1,66 +1,9 @@
 ---
 title: "Portfolio | Anthony Ho"
 layout: "home"
+bodyClasses: "page-home"
 ---
-<section id="home" class="section-block">
-<div class="home-profile-card">
-  <img src="images/ava.jpg" alt="Profile Picture" class="profile-avatar">
-
-  <h1 class="profile-name">Anthony Ho</h1>
-  <p class="profile-title">B.S. Mechanical Engineering</p>
-
-  <div class="social-icons">
-  <a href="https://www.instagram.com/hodacthong/" target="_blank" aria-label="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/your-linkedin-id/" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-</div>
-<div class="action-buttons">
-  <a href="pdf/Anthony-Ho-CV.pdf" target="_blank" rel="noopener" class="action-btn">
-  <i class="fas fa-file-alt"></i> Full CV
-</a>
-
-  <div class="divider-t"></div>
-
-  <a href="#contact" class="action-btn">
-    <i class="fa-solid fa-paper-plane"></i>
-    <span>Contact Me</span>
-  </a>
-</div>
-</div>
-</section>
-
-<section id="about" class="section-block">
-  <h2>🙋 About Me</h2>
-  <p>
-    I'm a passionate mechanical engineering student at California State Polytechnic University, Pomona, with a strong foundation in design, analysis, and prototyping.
-    My experience spans from hands-on R&D work to robotics competitions and academic research in optical sensing.
-  </p>
-  <p>
-    I enjoy building real-world solutions that blend mechanics and technology, from lifting machines to embedded systems.
-    Whether it's simulating stress in SolidWorks or integrating servo motors with Arduino, I take pride in both precision and creativity.
-  </p>
-  <p>
-    Outside of engineering, I enjoy mentoring others, participating in technical clubs, and constantly exploring new tools and ideas.
-  </p>
-</section>
-
-
-<section id="education" class="section-block">
-  <h2>🎓 Education</h2>
-  <p><strong>California State Polytechnic University, Pomona</strong><br>
-  <em>B.S. Mechanical Engineering, Minor in Physics</em></p>
-  <ul>
-    <li>📅 Expected Graduation: May 2026</li>
-    <li>🎯 GPA: 3.9 / 4.0</li>
-    <li>🏅 President’s Honor List</li>
-    <li>🏅 President of Pi Tau Sigma (ME Honor Society)</li>
-  </ul>
-</section>
-
-
+{{< aboutcard >}}
 
 <section id="experience">
   <h2>💼 Professional Experience</h2>
@@ -99,37 +42,21 @@ layout: "home"
   </article>
 </section>
 
+{{< projects >}}
 
-
-
-<section id="projects">
-  <h2>🧪 Projects & Research</h2>
-
-  <article class="project">
-    <h3>Undergraduate Researcher — Optical Sensing Lab <span class="date">(Aug 2024 – Present)</span></h3>
-    <ul>
-      <li>Pioneered experimental research on thermal expansion in solids by designing and executing high-precision tests to characterize the coefficient of thermal expansion (CTE) of acrylic substrates using SMS (single-mode–multimode–single-mode) fiber optic sensors
-      <li>Quantified wavelength shifts from thermal and mechanical strain, culminating in a publication at the Optica Sensing Congress 2025.
-    </ul>
-  </article>
-
-  <article class="project">
-    <h3>Dirt Hoarders Robotics Challenge <span class="date">(Mar – May 2024)</span></h3>
-    <ul>
-      <li>Designed a 3-DOF robotic excavator arm with rotary joints to scrape and transfer debris from a 15" x 12" container.</li>
-      <li>Calculated Mass Moment of Inertia and analyzed Material Properties to guarantee stability, durability, and prevent flipping or bending during operation.</li>
-      <li>Selected and integrated servo motors (MG996R, DS3225MG, DS3218MG) based on torque, speed, and weight requirements; developed a wireless Arduino-based control system using UNO R3 and ESP32 joystick shield.</li>
-    </ul>
-  </article>
-
-  <article class="project">
-    <h3>Hand-Powered Lifting Machine <span class="date">(Feb – Apr 2024)</span></h3>
-    <ul>
-      <li>Led a team in designing, constructing, and integrating mechanical systems (ramps, pulleys, wheel/axle) to achieve a mechanical advantage of 38.7 to 54.2, enabling the lifting of a 500 lb block 10 feet with only 9.22-12.91 lb of force.</li>
-      <li>Performed FEA in SOLIDWORKS to identify failure points and selected materials with appropriate Young’s Modulus, Shear Modulus, Yield Strength.</li>
-      <li>Prepared Part & Assembly Engineering Drawings with GD&T and optimal dimensional tolerances.</li>
-    </ul>
-  </article>
+<section id="education" class="section-block">
+  <h2>🎓 Education</h2>
+  <p><strong>California State Polytechnic University, Pomona</strong><br>
+  <em>B.S. Mechanical Engineering, Minor in Physics</em></p>
+  <ul>
+    <li>📅 Expected Graduation: May 2026</li>
+    <li>🎯 GPA: 3.9 / 4.0</li>
+    <li>🏅 President’s Honor List (Fall 2023 – Spring 2025)</li>
+    <li>🏅 Dean’s List (Fall 2023 – Spring 2025)</li>
+	  <li>🏅 President of Pi Tau Sigma - Mechanical Engineering Honor Society 2024-2025</li>
+	  <li>🏅 Maximizing Engineering Potential Mentor 2024</li>
+    <li>🏅 Semifinalist for the Jack Kent Cooke Foundation Undergraduate Transfer Scholarship 2023</li>
+  </ul>
 </section>
 
 ---

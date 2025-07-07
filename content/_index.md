@@ -73,7 +73,7 @@ body.dark .contact-form textarea {
 <section id="contact" class="contact-section">
   <h2>Contact</h2>
   <hr>
-  <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+  <form action="https://formspree.io/f/xanjgnea" method="POST" class="contact-form">
     <input type="text" name="name" placeholder="Name *" required>
     <input type="email" name="email" placeholder="Email *" required>
     <input type="text" name="subject" placeholder="Subject">
